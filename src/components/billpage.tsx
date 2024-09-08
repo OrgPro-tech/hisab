@@ -136,7 +136,7 @@ export function BillPage() {
 
     // Items Table
     doc.text("Items:", 20, 140);
-    let startY = 150;
+    const startY = 150;
 
     invoiceDetails.items.forEach((item, index) => {
       doc.text(`Item: ${item.name}`, 20, startY + index * 10);
